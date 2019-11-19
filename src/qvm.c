@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 unsigned char memory[0xFFFF];
-char stack[64];
+char stack[0x3F];
 
 int PC;
 unsigned char R[0xF];
