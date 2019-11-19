@@ -5,10 +5,11 @@ unsigned char memory[0xFFFF];
 char stack[64];
 
 int PC;
-unsigned char R[F];
+unsigned char R[0xF];
 char RI;
 char SP;
 
+int file_size;
 
 int main(int argc, char** argv)
 {
@@ -20,5 +21,9 @@ int main(int argc, char** argv)
     else
     {
         printf("Loaded successfully.\n");
+        fseek(file, 0L, SEEK_END);
+        file_size = ftell(file);
+        fseek(file, 0L, SEEK_SET);
+        printf("File Size: %d bytes\n", file_size);
     }
 }
