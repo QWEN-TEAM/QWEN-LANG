@@ -2,6 +2,13 @@
 #include<stdlib.h>
 
 unsigned char memory[0xFFFF];
+char stack[64];
+
+int PC;
+unsigned char R[F];
+char RI;
+char SP;
+
 
 int main(int argc, char** argv)
 {
