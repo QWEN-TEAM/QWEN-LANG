@@ -25,5 +25,13 @@ int main(int argc, char** argv)
         file_size = ftell(file);
         fseek(file, 0L, SEEK_SET);
         printf("File Size: %d bytes\n", file_size);
+        for(int i=0; i<file_size; i++)
+        {
+            memory[0x8800+i] = fgetc(file);
+        }
+        for(int i=0; i<0xFFFF; i++)
+        {
+            printf("location 0x%04x: 0x%04x\n", i, memory[i]);
+        }
     }
 }
