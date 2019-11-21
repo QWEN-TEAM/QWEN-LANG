@@ -4,7 +4,7 @@
 unsigned char memory[0xFFFF];
 char stack[0x3F];
 
-int PC;
+int PC = 0x8800;
 unsigned char R[0xF];
 char RI;
 char SP;
