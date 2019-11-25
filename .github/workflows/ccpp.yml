@@ -9,5 +9,5 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: make
+    - name: compile
       run: gcc src/qvm.c
