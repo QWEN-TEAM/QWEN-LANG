@@ -34,5 +34,6 @@ int main(int argc, char** argv)
         {
             printf("location 0x%04x: 0x%04x\n", i, memory[i]);
         }
+        fetch();
     }
 }
