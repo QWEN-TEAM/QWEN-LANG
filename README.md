@@ -1,5 +1,5 @@
 # QWEN-LANG
-An interpreted programming language for replacing CHIP-8
+An interpreted programming language for replacing CHIP-8. QWEN is an acronym for "QWEN Wields an Excellent Name".
 # LICENSE
 BSD 3-Clause License
 
