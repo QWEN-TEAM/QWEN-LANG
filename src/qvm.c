@@ -21,7 +21,7 @@ int main(int argc, char** argv)
     }
     else
     {
-        int i;
+        int i
         printf("Loaded successfully.\n");
         fseek(file, 0L, SEEK_END);
         file_size = ftell(file);
