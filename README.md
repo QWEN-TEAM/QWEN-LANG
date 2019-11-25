@@ -1,4 +1,4 @@
-# QWEN
+# QWEN-LANG
 An interpreted programming language for replacing CHIP-8
 # LICENSE
 BSD 3-Clause License
