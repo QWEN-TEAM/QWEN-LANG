@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include"cpu.h"
 
 unsigned char memory[0xFFFF];
 char stack[0x3F];
