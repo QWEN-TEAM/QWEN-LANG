@@ -18,6 +18,7 @@ int main(int argc, char** argv)
     if (file == NULL)
     {
         printf("Unable to load file. Please try again.\n");
+        return 1;
     }
     else
     {
@@ -37,5 +38,6 @@ int main(int argc, char** argv)
         }
         fetch(memory, &PC);
         printf("Terminated.\n");
+        return 0;
     }
 }
