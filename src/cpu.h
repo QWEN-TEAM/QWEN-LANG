@@ -11,8 +11,11 @@ void fetch(unsigned char *memory, int *_PC)
         unsigned opcode = (Hbyte << 8) | Lbyte;
         switch(opcode)
         {
-            case 0x00:
+            case 0x0000:
                 printf("Clear screen.\n");
+                break;
+            case 0x0001:
+                printf("Returns from a subroutine.\n");
                 break;
         }
         printf("PC: %x > 0x%.4x\n",PC, opcode);
