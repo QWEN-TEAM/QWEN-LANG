@@ -1,5 +1,6 @@
 # QWEN-LANG
 An interpreted programming language for replacing CHIP-8. QWEN is an acronym for "QWEN Wields an Excellent Name".
+QWEN Virutal Machine was written in C. QWAS(QWEN Assembler) and QwenIDE(Qwe-nIde) were written in C++.
 # LICENSE
 BSD 3-Clause License
 
