@@ -12,19 +12,19 @@ void fetch(unsigned char *memory, int *_PC)
         switch(opcode)
         {
             case 0x0000:
-                printf("Clear screen.\n");
+                printf("0x0000: Clear screen.\n");
                 break;
             case 0x0001:
-                printf("Returns from a subroutine.\n");
+                printf("0x0001: Returns from a subroutine.\n");
                 break;
             case 0x0002:
-                printf("goto NNNN;.\n");
+                printf("0x0002: goto NNNN;.\n");
                 break;
             case 0x0003:
-                printf("*(0xNNNN)();.\n");
+                printf("0x0003: *(0xNNNN)();.\n");
                 break;
             case 0x1XNN:
-                printf("RX = NN;.\n"):
+                printf("0x1XNN: RX = NN;.\n"):
                 break;
              
                        
