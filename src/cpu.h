@@ -34,8 +34,8 @@ the current PC on the top of the stack. The PC is then set to NNNN.\n");
                 printf("Sets RX to RX or RY (Bitwise OR Operation).\n");
                 break;
             case 0x32XY:
-                printf("Sets RX to RX and RY (Bitwise AND Operation)\n").
-                       
+                printf("Sets RX to RX and RY (Bitwise AND Operation)\n");
+                break;
         }
         printf("PC: %x > 0x%.4x\n",PC, opcode);
     }
