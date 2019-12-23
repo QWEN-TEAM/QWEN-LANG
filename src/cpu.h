@@ -17,6 +17,9 @@ void fetch(unsigned char *memory, int *_PC)
             case 0x0001:
                 printf("Returns from a subroutine.\n");
                 break;
+            case 0x0002:
+                printf("goto NNNN;.\n");
+                break;
         }
         printf("PC: %x > 0x%.4x\n",PC, opcode);
     }
