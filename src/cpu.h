@@ -20,6 +20,10 @@ void fetch(unsigned char *memory, int *_PC)
             case 0x0002:
                 printf("goto NNNN;.\n");
                 break;
+            case 0x0003:
+                printf("*(0xNNNN)();.\n);
+                break;
+                       
         }
         printf("PC: %x > 0x%.4x\n",PC, opcode);
     }
